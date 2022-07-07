@@ -1,5 +1,4 @@
-db.createCollection("boundary_collation", { collation: { locale: 'en_US', strength: 2 } } )
-{ ok: 1 }
+db.createCollection("boundary_collation", { collation: { locale: 'en', strength: 2 } } )
 
 db.boundary.aggregate([
   {
