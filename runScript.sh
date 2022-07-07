@@ -8,6 +8,9 @@ time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@profile.tllcr.mongodb.
 time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@collection.tllcr.mongodb.net/collection listUnusedIndexes.js
 time mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@notify.tllcr.mongodb.net/notify listUnusedIndexes.js
 
+#Script to create boundary_collation collection with default collation
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@boundary.tllcr.mongodb.net/boundary boundary_collationcreate.js
+
 #Script to update Indexes for all the below clusters
  time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@boundary.tllcr.mongodb.net/boundary boundaryIndex.js
  time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@master-data-set.tllcr.mongodb.net/data masterDataSetIndex.js
