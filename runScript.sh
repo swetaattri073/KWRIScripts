@@ -19,11 +19,18 @@ time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@boundary.tllcr.mongodb
 
 
 #Script to convert String to Date for the below clusters
-time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@boundary.tllcr.mongodb.net/boundary convertStringtoDate.js
-time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@master-data-set.tllcr.mongodb.net/data convertStringtoDate.js
- time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@profile.tllcr.mongodb.net/profile convertStringtoDate.js
-time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@collection.tllcr.mongodb.net/collection convertStringtoDate.js
-time mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@notify.tllcr.mongodb.net/notify convertStringtoDate.js
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@boundary.tllcr.mongodb.net/boundary convertIdtoDate.js
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@master-data-set.tllcr.mongodb.net/data convertIdtoDate.js
+ time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@profile.tllcr.mongodb.net/profile convertIdtoDate.js
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@collection.tllcr.mongodb.net/collection convertIdtoDate.js
+time mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@notify.tllcr.mongodb.net/notify convertIdtoDate.js
+
+#Script to convert all field names to camelCase
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@boundary.tllcr.mongodb.net/boundary toCamelCase.js
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@master-data-set.tllcr.mongodb.net/data toCamelCase.js
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@profile.tllcr.mongodb.net/profile toCamelCase.js
+time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@collection.tllcr.mongodb.net/collection toCamelCase.js
+time mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@notify.tllcr.mongodb.net/notify toCamelCase.js
 
 #Script to convert Remove null and undefined values for the below clusters -- parameter to be passed "CollectionName"
 time mongo mongodb+srv://mongoconsultant:qY3Atu49RHTUY1b9@boundary.tllcr.mongodb.net/boundary --eval'"var collectionName="boundary"' remove_null.js 

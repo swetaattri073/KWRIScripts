@@ -1,8 +1,7 @@
-//Boundary collection
 
 function  idToDateConvert(db,collectionName) {
 print("Executing for : " + collectionName);
-db.collectionName.updateMany({}, [{ "$addFields": {
+db.getCollection(collectionName).updateMany({}, [{ "$addFields": {
     "created_at": {
         "$toDate": "$_id"
     }
@@ -22,6 +21,8 @@ db.getMongo().getDBNames().forEach(function (name) {
         mdb.getCollectionNames().forEach(function (coll) {
             try {
                 var collName = mdb.getCollection(coll);
+                print("\nCollection: " + collName);
+                collName = collName.split('.')[1];
                 print("\nCollection: " + collName);
                 if (collName == "profile.instagramm"){
                     idToDateConvert(mdb, collName);
